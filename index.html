@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pradeeshkumar G — Senior PHP Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="#hero" class="logo">G<span>.</span>Pradeesh</a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#services">services</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#education">education</a></li>
+      <li><a href="pradeesh-resume.pdf" download>resume ↓</a></li>
+      <li><a href="#contact" class="nav-hire">hire_me()</a></li>
+    </ul>
+    <div class="hamburger" id="ham" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mob-menu" id="mmenu">
+    <a href="#about" onclick="closeMenu()">about</a>
+    <a href="#skills" onclick="closeMenu()">skills</a>
+    <a href="#services" onclick="closeMenu()">services</a>
+    <a href="#experience" onclick="closeMenu()">experience</a>
+    <a href="#projects" onclick="closeMenu()">projects</a>
+    <a href="#education" onclick="closeMenu()">education</a>
+    <a href="pradeesh-resume.pdf" download>resume ↓</a>
+    <a href="#contact" onclick="closeMenu()">contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-wrap">
+      <!-- LEFT: intro -->
+      <div class="hero-left fade">
+        <div class="hero-tag">Do you know me?</div>
+        <h1 class="hero-name">👋 I'm Pradeesh<span>kumar G</span></h1>
+        <p class="hero-role"><span>const role = </span>"Senior PHP Developer"<span>;</span></p>
+        <p class="hero-desc">8+ years as a PHP developer building Laravel and WordPress applications, WooCommerce
+          platforms, and REST APIs. I take full ownership, talk directly with clients, and fix the hard stuff.</p>
+        <div class="hero-badges">
+          <span class="hbadge">PHP</span>
+          <span class="hbadge">Laravel</span>
+          <span class="hbadge">WordPress</span>
+          <span class="hbadge">WooCommerce</span>
+          <span class="hbadge">Node.js</span>
+          <span class="hbadge">REST API</span>
+          <span class="hbadge">Docker</span>
+          <span class="hbadge">CI/CD</span>
+          <span class="hbadge">Stripe</span>
+          <span class="hbadge">Razorpay</span>
+        </div>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-orange">Contact me</a>
+          <a href="pradeesh-resume.pdf" class="btn btn-ghost" download>Download Resume ↓</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: VS Code editor -->
+      <div class="vscode-wrap fade">
+        <div class="vscode-outer">
+          <!-- title bar -->
+          <div class="vs-titlebar">
+            <div class="vs-dots">
+              <div class="vs-dot r"></div>
+              <div class="vs-dot y"></div>
+              <div class="vs-dot g"></div>
+            </div>
+            <div class="vs-title"><span>developer.js</span> — pradeesh-portfolio</div>
+          </div>
+          <!-- tabs -->
+          <div class="vs-tabs">
+            <div class="vs-tab active">
+              <div class="dot"></div>developer.js
+            </div>
+            <div class="vs-tab">skills.json</div>
+            <div class="vs-tab">README.md</div>
+          </div>
+          <!-- code -->
+          <div class="vs-body">
+            <div class="vs-lines">
+              <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+              <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+              <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span>
+              <span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+              <span>21</span><span>22</span><span>23</span>
+            </div>
+            <div class="vs-code">
+              <div class="line"><span class="c">// Senior PHP Developer · 8+ years</span></div>
+              <div class="line"></div>
+              <div class="line"><span class="k">const</span> <span class="v">developer</span> <span class="n">= {</span>
+              </div>
+              <div class="line"><span class="n">&nbsp;&nbsp;</span><span class="p">name</span><span class="n">:
+                </span><span class="s">"Pradeeshkumar G"</span><span class="n">,</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;</span><span class="p">role</span><span class="n">:
+                </span><span class="s">"Senior PHP Developer"</span><span class="n">,</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;</span><span class="p">location</span><span class="n">:
+                </span><span class="s">"Coimbatore, TN"</span><span class="n">,</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;</span><span class="p">experience</span><span class="n">:
+                </span><span class="num">8</span><span class="n">,</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;</span><span class="p">noticePeriod</span><span class="n">:
+                </span><span class="s">"15 days"</span><span class="n">,</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;</span><span class="p">stack</span><span class="n">:
+                  [</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="s">"PHP"</span><span
+                  class="n">, </span><span class="s">"Laravel"</span><span class="n">, </span><span
+                  class="s">"WordPress"</span><span class="n">,</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="s">"Node.js"</span><span
+                  class="n">, </span><span class="s">"WooCommerce"</span><span class="n">,</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="s">"REST API"</span><span
+                  class="n">, </span><span class="s">"MySQL"</span><span class="n">,</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="s">"Docker"</span><span
+                  class="n">, </span><span class="s">"GitHub Actions"</span><span class="n">, </span><span
+                  class="s">"CI/CD"</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;],</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;</span><span class="p">payments</span><span class="n">:
+                  [</span><span class="s">"Stripe"</span><span class="n">, </span><span class="s">"Razorpay"</span><span
+                  class="n">],</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;</span><span class="p">agile</span><span class="n">:
+                </span><span class="k">true</span><span class="n">,</span></div>
+              <div class="line"><span class="n">&nbsp;&nbsp;</span><span class="p">available</span><span class="n">:
+                </span><span class="k">true</span></div>
+              <div class="line"><span class="n">};</span></div>
+              <div class="line"></div>
+              <div class="line"><span class="k">export default</span> <span class="v">developer</span><span
+                  class="n">;</span><span class="cursor"></span></div>
+              <div class="line"></div>
+              <div class="line"><span class="c">// 📧 pradeesh389@gmail.com</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- floating skill icons -->
+        <div class="skill-icons">
+          <div class="si">🐘</div>
+          <div class="si">🛒</div>
+          <div class="si">⚡</div>
+          <div class="si">🔗</div>
+          <div class="si">🔒</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="sec-inner">
+      <div class="sec-label">about_me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="sec-title">I build things that work,<br>and fix things that don't.</h2>
+          <p>I've been working as a PHP developer for 8+ years — core PHP and Laravel form the backbone of what I
+            build, with deep specialization in WordPress theme and plugin work, WooCommerce platforms, REST APIs, and
+            payment gateways.</p>
+          <p>The last couple of years pushed me into CI/CD pipelines with GitHub Actions, Docker, security audits,
+            Agile sprint delivery, and performance work on busy production sites.</p>
+          <p>Most recently at <strong>Velan Info Services</strong> as a Software Developer — backend PHP, Laravel, and
+            WordPress work, plus DevOps. I'm the person the team calls when something breaks in production, and I'm
+            now open to my next senior PHP role.</p>
+        </div>
+        <div class="about-stats fade">
+          <div class="astat">
+            <div class="astat-n">8+</div>
+            <div class="astat-l">Years experience</div>
+          </div>
+          <div class="astat">
+            <div class="astat-n">10+</div>
+            <div class="astat-l">WooCommerce stores</div>
+          </div>
+          <div class="astat">
+            <div class="astat-n">60%</div>
+            <div class="astat-l">Avg load time cut</div>
+          </div>
+          <div class="astat">
+            <div class="astat-n">8+</div>
+            <div class="astat-l">Payment integrations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="sec-inner">
+      <div class="sec-label">tech_stack</div>
+      <h2 class="sec-title">Skills & Technologies</h2>
+      <p class="sec-sub">The stack I use every day — and what I reach for when things get complicated.</p>
+      <div class="skills-grid">
+        <div class="sk-card fade">
+          <div class="sk-cat">core language</div>
+          <div class="sk-name">PHP (Core & OOP)</div>
+          <div class="tags"><span class="tag">Core PHP</span><span class="tag">OOP</span><span
+              class="tag">MySQL</span><span class="tag">ES6+</span><span class="tag">jQuery</span><span
+              class="tag">AJAX</span><span class="tag">HTML/CSS</span></div>
+        </div>
+        <div class="sk-card fade">
+          <div class="sk-cat">frameworks</div>
+          <div class="sk-name">Laravel · Node.js · CodeIgniter</div>
+          <div class="tags"><span class="tag">Laravel (5+ yrs)</span><span class="tag">CodeIgniter</span><span
+              class="tag">Node.js</span><span class="tag">MVC</span><span class="tag">Eloquent ORM</span></div>
+        </div>
+        <div class="sk-card fade">
+          <div class="sk-cat">core</div>
+          <div class="sk-name">WordPress</div>
+          <div class="tags"><span class="tag">Custom Plugins</span><span class="tag">Theme Dev</span><span
+              class="tag">WooCommerce</span><span class="tag">REST API</span><span class="tag">Gutenberg</span><span
+              class="tag">Multisite</span></div>
+        </div>
+        <div class="sk-card fade">
+          <div class="sk-cat">page builders</div>
+          <div class="sk-name">Elementor & WPBakery</div>
+          <div class="tags"><span class="tag">Custom Widgets</span><span class="tag">Addon Dev</span><span
+              class="tag">Dynamic Data</span><span class="tag">Shortcodes</span></div>
+        </div>
+        <div class="sk-card fade">
+          <div class="sk-cat">devops & git</div>
+          <div class="sk-name">Docker, CI/CD & Deployment</div>
+          <div class="tags"><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span
+              class="tag">Git Flow</span><span class="tag">SSH</span><span class="tag">Linux CLI</span><span
+              class="tag">cPanel/WHM</span></div>
+        </div>
+        <div class="sk-card fade">
+          <div class="sk-cat">payments & apis</div>
+          <div class="sk-name">Stripe · Razorpay · REST</div>
+          <div class="tags"><span class="tag">Stripe API</span><span class="tag">Razorpay</span><span
+              class="tag">Webhooks</span><span class="tag">REST API</span><span class="tag">Third-party APIs</span>
+          </div>
+        </div>
+        <div class="sk-card fade">
+          <div class="sk-cat">security</div>
+          <div class="sk-name">Hardening & Audits</div>
+          <div class="tags"><span class="tag">XSS/CSRF</span><span class="tag">SQLi Prevention</span><span
+              class="tag">RBAC</span><span class="tag">wp-config</span><span class="tag">Plugin Audits</span></div>
+        </div>
+        <div class="sk-card fade">
+          <div class="sk-cat">workflow</div>
+          <div class="sk-name">Agile & Tools</div>
+          <div class="tags"><span class="tag">Agile/Scrum</span><span class="tag">JIRA</span><span
+              class="tag">Postman</span><span class="tag">WP-CLI</span><span class="tag">DevTools</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section id="services">
+    <div class="sec-inner">
+      <div class="sec-label">what_i_offer()</div>
+      <h2 class="sec-title">Services</h2>
+      <p class="sec-sub">New builds, rescue jobs, or ongoing development — things clients hire me for.</p>
+      <div class="svc-grid">
+        <div class="svc fade">
+          <div class="svc-ico">🔌</div>
+          <div class="svc-t">Custom Plugin Development</div>
+          <div class="svc-d">Custom post types, admin panels, shortcodes, API integrations — reusable, documented,
+            maintainable.</div>
+        </div>
+        <div class="svc fade">
+          <div class="svc-ico">🛒</div>
+          <div class="svc-t">WooCommerce Customization</div>
+          <div class="svc-d">Checkout flows, cart logic, product pages, order management, shipping rules — tailored to
+            your requirements.</div>
+        </div>
+        <div class="svc fade">
+          <div class="svc-ico">💳</div>
+          <div class="svc-t">Payment Gateway Integration</div>
+          <div class="svc-d">Stripe and Razorpay with webhook handling, failure recovery, server-side validation. Done
+            properly.</div>
+        </div>
+        <div class="svc fade">
+          <div class="svc-ico">🔗</div>
+          <div class="svc-t">REST API Development</div>
+          <div class="svc-d">WordPress REST API endpoints, third-party integrations, mobile app backends, CRM
+            connections.</div>
+        </div>
+        <div class="svc fade">
+          <div class="svc-ico">⚡</div>
+          <div class="svc-t">Performance Optimization</div>
+          <div class="svc-d">Query rewrites, object caching, asset minification, CDN setup — sites from 6–8s to under
+            2s.</div>
+        </div>
+        <div class="svc fade">
+          <div class="svc-ico">🔒</div>
+          <div class="svc-t">Security Hardening</div>
+          <div class="svc-d">Full audits: wp-config, .htaccess, user roles, plugin vulnerabilities, XSS/CSRF/SQLi fixes.
+          </div>
+        </div>
+        <div class="svc fade">
+          <div class="svc-ico">🚀</div>
+          <div class="svc-t">CI/CD & DevOps Setup</div>
+          <div class="svc-d">GitHub Actions pipelines, Git Flow, automated deploys. No more manual FTP or production
+            surprises.</div>
+        </div>
+        <div class="svc fade">
+          <div class="svc-ico">🎨</div>
+          <div class="svc-t">Elementor & WPBakery Addons</div>
+          <div class="svc-d">Custom widgets when defaults don't work — live preview, dynamic data, fully responsive.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience">
+    <div class="sec-inner">
+      <div class="sec-label">work_history[]</div>
+      <h2 class="sec-title">Experience</h2>
+      <p class="sec-sub">8+ years across agencies and product companies.</p>
+      <div class="timeline">
+
+        <div class="exp fade side-l">
+          <div class="exp-node"></div>
+          <div class="exp-card">
+            <div class="exp-card-head">
+              <span class="exp-period">Dec 2024 – Jul 2026</span>
+              <span class="exp-loc">Coimbatore, TN · Full-time</span>
+            </div>
+            <div class="exp-role">Software Developer</div>
+            <div class="exp-co">Velan Info Services</div>
+            <ul class="exp-list">
+              <li>Backend developer focused on PHP, Laravel, and WordPress custom development — building dynamic,
+                scalable web applications that hold up under production traffic.</li>
+              <li>Work in Agile sprints — two-week cycles with daily standups, sprint planning, and retrospectives.</li>
+              <li>Set up CI/CD pipelines using GitHub Actions — automated builds, linting, zero-manual-FTP deployments.
+              </li>
+              <li>Containerized Laravel and WordPress applications with Docker for consistent local, staging, and
+                production environments.</li>
+              <li>Carried out a full security audit: user roles, plugin vulnerabilities, SSL, firewall rules, wp-config
+                hardening.</li>
+              <li>Build and maintain REST APIs consumed by mobile apps and third-party platforms.</li>
+              <li>Stripe and Razorpay integrated end-to-end — API setup, webhooks, failure handling, transaction
+                logging.</li>
+              <li>Performance fixes on high-traffic sites — load times down ~60% through query fixes and caching.</li>
+              <li>Code reviews for the team and handling client escalations that need a senior eye.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">PHP</span><span class="exp-tag">Laravel</span><span class="exp-tag">WordPress</span>
+              <span class="exp-tag">GitHub Actions</span><span class="exp-tag">CI/CD</span><span class="exp-tag">REST
+                API</span>
+              <span class="exp-tag">Stripe</span><span class="exp-tag">Razorpay</span><span class="exp-tag">Agile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp fade side-r">
+          <div class="exp-node"></div>
+          <div class="exp-card">
+            <div class="exp-card-head">
+              <span class="exp-period">Mar 2022 – Mar 2024</span>
+              <span class="exp-loc">Coimbatore, TN · Full-time</span>
+            </div>
+            <div class="exp-role">PHP & WordPress Developer</div>
+            <div class="exp-co">WedesignTech Pvt Ltd</div>
+            <ul class="exp-list">
+              <li>WooCommerce across 10+ e-commerce stores — checkout, cart, product pages, and order flows, each with
+                different business rules.</li>
+              <li>Built custom Elementor widgets and WPBakery addons when built-in controls weren't enough.</li>
+              <li>Specialized in WooCommerce and Elementor customization using PHP, HTML, CSS, and JavaScript as the
+                daily stack.</li>
+              <li>Designed and built custom WordPress themes, plugins, and e-commerce solutions tailored to individual
+                client requirements.</li>
+              <li>Customized third-party plugins, including WooCommerce and Elementor, to extend functionality beyond
+                out-of-the-box capability.</li>
+              <li>Delivered client-focused web solutions through strong problem-solving and iterative development.</li>
+              <li>Stripe and Razorpay integrations — webhooks, failed payment handling, server-side validation.</li>
+              <li>REST APIs and third-party API connections into WooCommerce for order and inventory syncing.</li>
+              <li>Performance fixes — TTFB brought down 40–65% through query rewrites and asset optimization.</li>
+              <li>Security patching: XSS, CSRF, plugin updates, vulnerability sweeps across client sites.</li>
+              <li>Used creativity and problem-solving to deliver web solutions clients were actually happy with.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">WordPress</span><span class="exp-tag">WooCommerce</span>
+              <span class="exp-tag">Elementor</span><span class="exp-tag">WPBakery</span>
+              <span class="exp-tag">PHP</span><span class="exp-tag">REST API</span><span class="exp-tag">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp fade side-l">
+          <div class="exp-node"></div>
+          <div class="exp-card">
+            <div class="exp-card-head">
+              <span class="exp-period">Jun 2021 – Mar 2022</span>
+              <span class="exp-loc">Chennai, TN · Full-time</span>
+            </div>
+            <div class="exp-role">PHP Developer</div>
+            <div class="exp-co">Streetbell Technologies Pvt Ltd</div>
+            <ul class="exp-list">
+              <li>Wrote back-end code and built efficient, reusable PHP modules for client projects.</li>
+              <li>Developed back-end portals with optimized database design.</li>
+              <li>Troubleshot application and code-level issues, strengthening debugging and root-cause analysis skills.
+              </li>
+              <li>Built and integrated REST APIs and connected third-party services into live apps.</li>
+              <li>Maintained and refactored legacy PHP codebases — bug fixes, cleanup, performance improvements.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">PHP</span><span class="exp-tag">MySQL</span><span class="exp-tag">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp fade side-r">
+          <div class="exp-node"></div>
+          <div class="exp-card">
+            <div class="exp-card-head">
+              <span class="exp-period">Nov 2018 – May 2021</span>
+              <span class="exp-loc">Coimbatore, TN · Full-time</span>
+            </div>
+            <div class="exp-role">Web Developer</div>
+            <div class="exp-co">Pearl Software's Inc</div>
+            <ul class="exp-list">
+              <li>Designed, developed, and implemented software applications across multiple websites.</li>
+              <li>PHP, SQL, JavaScript, AJAX, JSON — converted mockups into working front-end code.</li>
+              <li>Cross-browser compatibility across Firefox, Chrome, Safari.</li>
+              <li>Represented web team in executive meetings, discussed project goals and milestones.</li>
+              <li>Used creativity and problem-solving to deliver outstanding web solutions.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">PHP</span><span class="exp-tag">JavaScript</span>
+              <span class="exp-tag">SQL</span><span class="exp-tag">AJAX</span><span class="exp-tag">HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="sec-inner">
+      <div class="sec-label">projects.map()</div>
+      <h2 class="sec-title">Things I've Built</h2>
+      <p class="sec-sub">A few areas where I've done the most meaningful work.</p>
+      <div class="proj-grid">
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">🔌</div>
+            <div class="proj-t">Reusable Plugin Framework</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">Modular plugin architecture with custom post types, admin panels, and shortcode modules —
+              reused across 4–5 client sites without changes.</p>
+            <div class="tags"><span class="tag">WordPress</span><span class="tag">PHP OOP</span><span class="tag">Custom
+                Post Types</span></div>
+          </div>
+        </div>
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">🛒</div>
+            <div class="proj-t">WooCommerce Platform Builds</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">Full WooCommerce customizations across 10+ stores — checkout UX, cart logic, order
+              management, shipping rules, and tax configs.</p>
+            <div class="tags"><span class="tag">WooCommerce</span><span class="tag">PHP</span><span
+                class="tag">MySQL</span></div>
+          </div>
+        </div>
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">📊</div>
+            <div class="proj-t">Custom CRM Systems in Laravel</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">Built lead and customer management CRMs on Laravel — sales pipelines, role-based access,
+              activity timelines, and reporting dashboards mapped to each business's own sales workflow.</p>
+            <div class="tags"><span class="tag">Laravel</span><span class="tag">Eloquent ORM</span><span
+                class="tag">RBAC</span><span class="tag">MySQL</span></div>
+          </div>
+        </div>
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">🛍️</div>
+            <div class="proj-t">Laravel E-Commerce Platforms</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">End-to-end e-commerce builds on Laravel outside the WordPress stack — product catalogs,
+              cart and checkout flow, order management, and Stripe/Razorpay integration.</p>
+            <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span><span
+                class="tag">Stripe</span><span class="tag">Order Management</span></div>
+          </div>
+        </div>
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">🔗</div>
+            <div class="proj-t">REST API Development</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">Designed and built REST APIs in Laravel and core PHP for mobile apps and third-party
+              integrations — token auth, rate limiting, and versioned endpoints consumed in production.</p>
+            <div class="tags"><span class="tag">REST API</span><span class="tag">Laravel</span><span
+                class="tag">Auth Tokens</span><span class="tag">API Versioning</span></div>
+          </div>
+        </div>
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">💳</div>
+            <div class="proj-t">Payment Gateway Integrations</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">Stripe and Razorpay on 8+ projects — API keys, webhook listeners, failure flows,
+              server-side validation for every transaction.</p>
+            <div class="tags"><span class="tag">Stripe API</span><span class="tag">Razorpay</span><span
+                class="tag">Webhooks</span></div>
+          </div>
+        </div>
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">🚀</div>
+            <div class="proj-t">CI/CD Pipeline Setup</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">GitHub Actions workflows for automated builds, linting, and deploys — took teams from
+              manual FTP to proper pipelines.</p>
+            <div class="tags"><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag">Git
+                Flow</span></div>
+          </div>
+        </div>
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">⚡</div>
+            <div class="proj-t">Site Performance Rescues</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">Several sites taken from 6–8s to under 2s — query fixes, object caching, lazy loading,
+              stopping plugins loading what they don't need.</p>
+            <div class="tags"><span class="tag">Performance</span><span class="tag">Caching</span><span class="tag">Core
+                Web Vitals</span></div>
+          </div>
+        </div>
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">🎨</div>
+            <div class="proj-t">Custom Elementor Widgets</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">10+ custom Elementor widgets with live preview, dynamic controls, and responsive layouts —
+              adopted as standard across client projects.</p>
+            <div class="tags"><span class="tag">Elementor</span><span class="tag">WPBakery</span><span
+                class="tag">JavaScript</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education">
+    <div class="sec-inner">
+      <div class="sec-label">education[]</div>
+      <h2 class="sec-title">Education & Languages</h2>
+      <p class="sec-sub">Academic background from Bharathiar University, Coimbatore.</p>
+      <div class="proj-grid" style="grid-template-columns:repeat(auto-fill,minmax(240px,1fr))">
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">🎓</div>
+            <div class="proj-t">MCA — Master of Computer Applications</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">Bharathiar University, Coimbatore · 2018</p>
+          </div>
+        </div>
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">📘</div>
+            <div class="proj-t">B.Sc — Bachelor of Computer Science</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">Bharathiar University, Coimbatore · 2016</p>
+          </div>
+        </div>
+        <div class="proj fade">
+          <div class="proj-top">
+            <div class="proj-ico">🗣️</div>
+            <div class="proj-t">Languages</div>
+          </div>
+          <div class="proj-body">
+            <p class="proj-d">Tamil · English</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="sec-inner">
+      <div class="sec-label">contact.init()</div>
+      <h2 class="sec-title">Let's work together</h2>
+      <p class="sec-sub">Open to full-time roles, freelance, and contract work. Based in Coimbatore — available within
+        15 days.</p>
+      <div class="contact-grid">
+        <div class="ccard fade"><span class="cico">📞</span>
+          <div>
+            <div class="clbl">phone</div>
+            <div class="cval"><a href="tel:+919488474987">+91 9488474987</a><br><a href="tel:+918220389281">+91
+                8220389281</a></div>
+          </div>
+        </div>
+        <div class="ccard fade"><span class="cico">✉️</span>
+          <div>
+            <div class="clbl">email</div>
+            <div class="cval"><a href="mailto:pradeesh389@gmail.com">pradeesh389@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="ccard fade"><span class="cico">📍</span>
+          <div>
+            <div class="clbl">location</div>
+            <div class="cval">Coimbatore, Tamil Nadu, India</div>
+          </div>
+        </div>
+        <div class="ccard fade"><span class="cico">🔗</span>
+          <div>
+            <div class="clbl">linkedin</div>
+            <div class="cval"><a href="https://linkedin.com/in/pradeeshkumar-g-7a432b26a"
+                target="_blank">linkedin.com/in/pradeeshkumar-g</a></div>
+          </div>
+        </div>
+        <div class="ccard fade"><span class="cico">⏱️</span>
+          <div>
+            <div class="clbl">notice_period</div>
+            <div class="cval">0 – 15 days · Ready to join</div>
+          </div>
+        </div>
+        <div class="ccard fade"><span class="cico">💼</span>
+          <div>
+            <div class="clbl">open_to</div>
+            <div class="cval">Full-time · Freelance · Contract</div>
+          </div>
+        </div>
+      </div>
+      <div class="hire-box fade">
+        <p>Best way to reach me is <strong>email or phone</strong>. I usually respond within a few hours and happy to
+          jump on a call to discuss a role or project.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>// </span>© 2026 Pradeeshkumar G &nbsp;·&nbsp; Senior PHP Developer &nbsp;·&nbsp; Coimbatore, TN<span>
+      //</span>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
